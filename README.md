@@ -16,20 +16,17 @@ prompt architecture with strict input/output contracts and LLM-based evaluation.
 ---
 
 ## Architecture
+```
 INPUT (JSON)
 ↓
-```
 Schema Validation
 ↓
-```
 LLM Screening (Prompt System)
 ↓
-```
 Output Schema Validation
 ↓
-```
 LLM Evaluation (Judge)
-
+```
 ---
 
 ## Project Structure
