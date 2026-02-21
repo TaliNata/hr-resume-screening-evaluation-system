@@ -1,7 +1,0 @@
-Steps:
-1. Extract required skills from job description.
-2. Extract skills and experience from resume.
-3. Compare overlap and gaps.
-4. Assign match score (0–100) with justification.
-5. Identify hiring risks.
-6. Produce final recommendation.
