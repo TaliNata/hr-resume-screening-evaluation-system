@@ -30,6 +30,7 @@ LLM Evaluation (Judge)
 ---
 
 ## Project Structure
+```
 hr-llm-system/
 ├─ core/
 ├─ prompts/
@@ -38,7 +39,7 @@ hr-llm-system/
 ├─ pipeline.py
 ├─ run.py
 └─ README.md
-
+```
 ---
 
 ## Example Output
