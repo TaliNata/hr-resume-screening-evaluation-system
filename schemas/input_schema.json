@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HRResumeScreeningInput",
+  "description": "Input schema for HR resume screening LLM pipeline",
+  "type": "object",
+  "required": ["job_description", "resume_text"],
+  "additionalProperties": false,
+  "properties": {
+    "job_description": {
+      "type": "string",
+      "description": "Full text of the job description including responsibilities and requirements",
+      "minLength": 50
+    },
+    "resume_text": {
+      "type": "string",
+      "description": "Raw resume text provided by the candidate",
+      "minLength": 50
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional contextual metadata",
+      "required": [],
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "description": "Internal candidate identifier"
+        },
+        "job_id": {
+          "type": "string",
+          "description": "Internal job posting identifier"
+        },
+        "source": {
+          "type": "string",
+          "enum": ["linkedin", "email", "career_page", "referral", "other"]
+        }
+      }
+    }
+  }
+}
